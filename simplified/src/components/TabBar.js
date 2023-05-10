@@ -54,18 +54,18 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
       <Grid container spacing={2}>
-        <Grid xs={6} style={{height: "40vh"}}>
-          <>Historical</>
+        <Grid xs={6} style={{height: "40vh", padding: "24px", borderRight: '3px solid', borderBottom: '3px solid'}}>
+          <div style={{ fontSize: '32px', bottom: '25px', position: "relative"}}>Historical</div>
           <BarChartOutcome />
         </Grid>
-        <Grid xs={6} style={{height: "40vh"}}>
-          <>Prediction</>
+        <Grid xs={6} style={{height: "40vh", padding: "24px", borderBottom: '3px solid'}}>
+        <div style={{ fontSize: '32px', bottom: '25px', position: "relative"}}>Prediction</div>
           <BarChartOutcome2 />
         </Grid> 
-        <Grid xs={6} style={{height: "40vh"}}>
+        <Grid xs={6} style={{height: "40vh", padding: "24px", borderRight: '3px solid', }}>
           <LineChartOutcome />
         </Grid>
-        <Grid xs={6} style={{height: "40vh"}}>
+        <Grid xs={6} style={{height: "40vh", padding: "24px", }}>
           <LineChartOutcome2 />
         </Grid>
       </Grid>

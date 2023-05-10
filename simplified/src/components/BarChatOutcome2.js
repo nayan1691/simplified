@@ -17,7 +17,7 @@ const data = [
   {
     name: '3',
     uv: 24,
-    pv: 94,
+    pv: 44,
     amt: 10,
   },
   {
@@ -56,8 +56,8 @@ export default class BarChartOutcome2 extends PureComponent {
           <YAxis><Label value="Percentage of revisits" angle={-90}  position="left"  /></YAxis>
           <Tooltip />
           <Legend verticalAlign="top" />
-          <Bar name="2023 72-hour return" dataKey="pv" fill="#8884d8" />
-          <Bar name="2024 72-hour return" dataKey="uv" fill="#82ca9d" />
+          <Bar name="2023 72-hour return" dataKey="pv" fill="#00B0BB" />
+          <Bar name="2024 72-hour return" dataKey="uv" fill="#00467E" />
         </BarChart>
       </ResponsiveContainer>
     );

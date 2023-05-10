@@ -17,8 +17,8 @@ const data = [
   {
     name: 'Jun',
     uv: 2000,
-    pv: 6800,
-    amt: 4000,
+    pv: 3800,
+    amt: 3000,
   },
   {
     name: 'Jul',
@@ -69,9 +69,9 @@ const data = [
   },
   {
     name: 'Mar',
-    uv: 3000,
-    pv: 4300,
-    amt: 2100,
+    uv: 2000,
+    pv: 2300,
+    amt: 1100,
   },
 ];
 
@@ -97,8 +97,8 @@ export default class LineChartOutcome2 extends PureComponent {
           <YAxis><Label value="No. of ED Visits" angle={-90}  position="left"  /></YAxis>
           <Tooltip />
           <Legend verticalAlign="top" />
-          <Line type="monotone" name="2023" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" name="2024" dataKey="uv" stroke="#82ca9d" />
+          <Line type="monotone" name="2023" dataKey="pv" stroke="#00B0BB" activeDot={{ r: 8 }} />
+          <Line type="monotone" name="2024" dataKey="uv" stroke="#00467E" />
         </LineChart>
       </ResponsiveContainer>
     );

@@ -97,8 +97,8 @@ export default class LineChartOutcome extends PureComponent {
           <YAxis><Label value="No. of ED Visits" angle={-90}  position="left"  /></YAxis>
           <Tooltip />
           <Legend verticalAlign="top" />
-          <Line type="monotone" name="2021" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-          <Line type="monotone" name="2022" dataKey="uv" stroke="#82ca9d" />
+          <Line type="monotone" name="2021" dataKey="pv" stroke="#CF2732" activeDot={{ r: 8 }} />
+          <Line type="monotone" name="2022" dataKey="uv" stroke="#83B531" />
         </LineChart>
       </ResponsiveContainer>
     );

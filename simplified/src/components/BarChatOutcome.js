@@ -56,8 +56,8 @@ export default class BarChartOutcome extends PureComponent {
           <YAxis><Label value="Percentage of revisits" angle={-90}  position="left"  /></YAxis>
           <Tooltip />
           <Legend verticalAlign="top" />
-          <Bar name="2021 72-hour return" dataKey="pv" fill="#8884d8" />
-          <Bar name="2022 72-hour return" dataKey="uv" fill="#82ca9d" />
+          <Bar name="2021 72-hour return" dataKey="pv" fill="#CF2732" />
+          <Bar name="2022 72-hour return" dataKey="uv" fill="#83B531" />
         </BarChart>
       </ResponsiveContainer>
     );
