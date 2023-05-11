@@ -12,6 +12,9 @@ import BarChartOutcome from './BarChatOutcome';
 import BarChartOutcome2 from './BarChatOutcome2';
 import LineChartOutcome from './LineChartOutcome';
 import LineChartOutcome2 from './LineChartOutcome2';
+import StaffingTable from './StaffingTable';
+import StaffingTable2 from './StaffingTable2';
+import { Button } from '@mui/material';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -66,8 +69,7 @@ export default function BasicTabs() {
       </FormControl>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label="Outcome" {...a11yProps(0)} />
-          <Tab label="Process" {...a11yProps(1)} />
-          <Tab label="Staffing" {...a11yProps(2)} />
+          <Tab label="Staffing" {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -89,11 +91,11 @@ export default function BasicTabs() {
         </Grid>
       </Grid>
       </TabPanel>
+      
       <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        Item Three
+        <Button style={{ backgroundColor: '#83B531', height: '50px', padding: '20px', color: 'black'}}>Request Traveler Nurses</Button>
+        <StaffingTable />
+        <StaffingTable2 />
       </TabPanel>
     </Box>
   );
